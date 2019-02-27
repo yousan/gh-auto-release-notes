@@ -66,6 +66,7 @@ jobs:
 
       # run tests!
       - run: git tag
+      - run: export VERSION='v0.4.7'; curl --data '{"tag_name": "'$VERSION'","target_commitish": "master","name": "'$VERSION'","body": "Release of version hello '"$VERSION"'","draft": false,"prerelease": false}'  https://api.github.com/repos/yousan/gh-auto-release-notes/releases\?access_token\="$GITHUB_ACCESS_TOKEN"
 workflows:
   version: 2
   master-commit: # 本番環境へのデプロイ。releaseブランチにコミット（マージ）された場合に発動させてデプロイ。
