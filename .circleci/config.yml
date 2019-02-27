@@ -65,7 +65,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: yarn
+      - run: git tag
 workflows:
   version: 2
   master-commit: # 本番環境へのデプロイ。releaseブランチにコミット（マージ）された場合に発動させてデプロイ。
