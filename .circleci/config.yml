@@ -79,9 +79,9 @@ workflows:
 #          requires: # テスト失敗したら辞める
 #            # - test
 #            - version
-          filters:
-            tags:
-              only: /v[0-9]+(\.[0-9]+)+/ # only for version tagged (e.g. v1.2.3)
+#          filters:
+#            tags:
+#              only: /v[0-9]+(\.[0-9]+)+/ # only for version tagged (e.g. v1.2.3)
 #            branches:
 #              only:
 #                - master
