@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"no test ;)\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yousan/gh-auto-release-notes/issues"
   },
-  "homepage": "https://github.com/yousan/gh-auto-release-notes#readme"
+  "homepage": "https://github.com/yousan/gh-auto-release-notes#readme",
+  "dependencies": {
+    "git-release-notes": "^4.0.1"
+  }
 }

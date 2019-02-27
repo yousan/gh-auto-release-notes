@@ -57,7 +57,11 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+<<<<<<< HEAD
       - run: yarn install
+=======
+      - run: yarn add git-release-notes
+>>>>>>> release/v0.4.4
 
       - save_cache:
           paths:
@@ -65,7 +69,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
+<<<<<<< HEAD
       - run: yarn testa
+=======
+      - run: git tag
+>>>>>>> release/v0.4.4
 workflows:
   version: 2
   master-commit: # 本番環境へのデプロイ。releaseブランチにコミット（マージ）された場合に発動させてデプロイ。
