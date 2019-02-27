@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yousan/gh-auto-release-notes/issues"
   },
-  "homepage": "https://github.com/yousan/gh-auto-release-notes#readme"
+  "homepage": "https://github.com/yousan/gh-auto-release-notes#readme",
+  "dependencies": {
+    "git-release-notes": "^4.0.1"
+  }
 }
